@@ -1,1 +1,144 @@
-!function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){n(1),e.exports=n(2)},function(e,t){var n=document.querySelectorAll(".nav-menu__link.has-subnav"),o=document.body;n.forEach((function(e){return e.addEventListener("click",(function(e){if(o.classList.contains("show-sidebar")){var t=e.currentTarget,n=t.nextElementSibling;t.classList.contains("open")?(n.removeAttribute("style"),setTimeout((function(){t.classList.remove("open")}),1)):(t.classList.add("open"),setTimeout((function(){n.style.height="auto",n.style.opacity="1",n.style.transform="none"}),1))}}))}))},function(e,t){var n=document.getElementById("sidebarToggle"),o=document.getElementById("sidebar"),r=document.getElementById("page"),s=document.body;function i(){console.log("closed"),s.classList.remove("show-sidebar"),document.querySelector(".page__mask").remove(),o.classList.remove("sidebar")}n.addEventListener("click",(function(e){var t;s.classList.contains("show-sidebar")?i():((t=document.createElement("div")).classList.add("page__mask"),t.addEventListener("click",i),r.appendChild(t),s.classList.add("show-sidebar"),o.classList.add("sidebar"))}))}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var hasSubnav = document.querySelectorAll('.nav-menu__link.has-subnav');\nvar hasBody = document.body;\nhasSubnav.forEach(function (item) {\n  return item.addEventListener('click', function (event) {\n    if (hasBody.classList.contains('show-sidebar')) {\n      var $this = event.currentTarget;\n      var subnavMenu = $this.nextElementSibling; // $this.classList.toggle('open');\n\n      if (!$this.classList.contains('open')) {\n        $this.classList.add('open');\n        setTimeout(function () {}, 1);\n      } else {\n        subnavMenu.removeAttribute('style');\n        setTimeout(function () {\n          $this.classList.remove('open');\n        }, 1);\n      }\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/masonryInit.js":
+/*!**************************************!*\
+  !*** ./src/assets/js/masonryInit.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// console.log(\"INIT\");\n// window.addEventListener(\"DOMContentLoaded\", function() {\n//     const grid = document.querySelector('.team__grid-masonry');\n//     const masonry = new Masonry(grid, {\n//         itemSelector: '.team__item',\n//         // layoutMode: 'fitRows',\n//         // percentPosition: true, \n//         // originLeft: false\n//     });\n// });\n\n//# sourceURL=webpack:///./src/assets/js/masonryInit.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/mobileDropdown.js":
+/*!*****************************************!*\
+  !*** ./src/assets/js/mobileDropdown.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var hasSubnav = document.querySelectorAll('.nav-menu__link.has-subnav');\nvar hasBody = document.body;\nhasSubnav.forEach(function (item) {\n  return item.addEventListener('click', function (event) {\n    if (hasBody.classList.contains('show-sidebar')) {\n      var $this = event.currentTarget;\n      var subnavMenu = $this.nextElementSibling; // $this.classList.toggle('open');\n\n      if (!$this.classList.contains('open')) {\n        $this.classList.add('open');\n        setTimeout(function () {}, 1);\n      } else {\n        subnavMenu.removeAttribute('style');\n        setTimeout(function () {\n          $this.classList.remove('open');\n        }, 1);\n      }\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/assets/js/mobileDropdown.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/mobileNav.js":
+/*!************************************!*\
+  !*** ./src/assets/js/mobileNav.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var burger = document.getElementById('sidebarToggle');\nvar sidebar = document.getElementById('sidebar');\nvar page = document.getElementById('page');\nvar body = document.body;\nburger.addEventListener('click', function (event) {\n  if (body.classList.contains('show-sidebar')) {\n    closeSidebar();\n  } else {\n    showSidebar();\n  }\n});\n\nfunction showSidebar() {\n  var mask = document.createElement('div');\n  mask.classList.add('page__mask');\n  mask.addEventListener('click', closeSidebar);\n  page.appendChild(mask);\n  body.classList.add('show-sidebar');\n  sidebar.classList.add('sidebar');\n}\n\nfunction closeSidebar() {\n  body.classList.remove('show-sidebar');\n  document.querySelector('.page__mask').remove();\n  sidebar.classList.remove('sidebar');\n}\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/masonryInit.js ./src/assets/js/mobileDropdown.js ./src/assets/js/mobileNav.js ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! D:\\Programming\\Projects\\UI\\krestonpr-ui\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! D:\\Programming\\Projects\\UI\\krestonpr-ui\\src\\assets\\js\\masonryInit.js */\"./src/assets/js/masonryInit.js\");\n__webpack_require__(/*! D:\\Programming\\Projects\\UI\\krestonpr-ui\\src\\assets\\js\\mobileDropdown.js */\"./src/assets/js/mobileDropdown.js\");\nmodule.exports = __webpack_require__(/*! D:\\Programming\\Projects\\UI\\krestonpr-ui\\src\\assets\\js\\mobileNav.js */\"./src/assets/js/mobileNav.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/masonryInit.js_./src/assets/js/mobileDropdown.js_./src/assets/js/mobileNav.js?");
+
+/***/ })
+
+/******/ });
