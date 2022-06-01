@@ -497,6 +497,7 @@ p {
       display: none; } }
 
 .sidebar {
+  display: none;
   width: 100%;
   max-width: 300px;
   height: 100%;
@@ -1046,6 +1047,14 @@ p {
         order: 2;
         margin: 0 auto; } }
 
+.tabs-ui__content {
+  display: none;
+  opacity: 0;
+  transition: all .2s ease-in; }
+  .tabs-ui__content.active {
+    display: block;
+    opacity: 1; }
+
 .tabs-ui__title {
   margin-bottom: 20px;
   font-size: 36px;
@@ -1081,10 +1090,14 @@ p {
       border-radius: 10px; } }
 
 .tabs-ui-nav__btn {
+  padding: 0;
   color: #000;
   font-size: 15px;
   line-height: 30px;
   text-decoration: none;
+  background: inherit;
+  border: none;
+  outline: none;
   position: relative; }
   .tabs-ui-nav__btn::after {
     content: "";
