@@ -569,7 +569,7 @@ p {
 .search-bar__icon::before {
   content: "";
   display: inline-block;
-  background-image: url("/assets/images/mag-glass.svg");
+  background-image: url("assets/images/mag-glass.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 23px;
@@ -581,7 +581,7 @@ p {
   color: #243646;
   text-decoration: none; }
   .contact-number a::before {
-    content: url("/assets/images/phone.svg");
+    content: url("assets/images/phone.svg");
     margin-right: 3px; }
 
 .social {
@@ -1104,7 +1104,7 @@ p {
     display: block;
     width: 10px;
     height: 14px;
-    background: url("/assets/images/small-teal-arrow.svg") no-repeat;
+    background: url("assets/images/small-teal-arrow.svg") no-repeat;
     position: absolute;
     left: -30px;
     top: 3px;
@@ -1160,7 +1160,7 @@ p {
   padding-left: 25px;
   font-size: 20px;
   line-height: 25px;
-  background: url("/assets/images/small-teal-arrow.svg") no-repeat left top 7px/10px 14px; }
+  background: url("assets/images/small-teal-arrow.svg") no-repeat left top 7px/10px 14px; }
 
 .team__item {
   width: 33.33333%;
@@ -1218,7 +1218,7 @@ p {
     padding-left: 25px;
     font-size: 20px;
     line-height: 25px;
-    background: url("/assets/images/small-teal-arrow.svg") no-repeat left top 7px/10px 14px; }
+    background: url("assets/images/small-teal-arrow.svg") no-repeat left top 7px/10px 14px; }
 
 .clients__subtitle {
   margin-bottom: 20px;
