@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -26,36 +26,18 @@
                 <div class="header__inner">
                         <div class="header__left">
                             <a href="https://krestonpr.com/">
-                                <img class="header__logo" src="/assets/images/logo.svg" alt="logo">
+                                <img class="header__logo" src="assets/images/logo.svg" alt="logo">
                             </a>
                         </div>
                         <div class="header__right">
                             <div class="nav-bar">
                                 <div class="nav-top">
-                                    <form class="search" action="search.html" method="get">
-                                        <div class="search-bar">
-                                            <input class="search-bar__input" type="search" placeholder="поиск">
-                                            <button class="search-bar__btn">
-                                                <span class="search-bar__icon"></span>
-                                            </button>
-                                        </div>
-                                    </form>
                                     <div class="contact-number">
                                         <a href="tel:+77272504783">+7 (727) 250 47 83</a>
                                     </div>
-                                    <div class="social">
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/facebook-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/twitter-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/linkedin-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/instagram-icon.svg" alt="social">
-                                        </a>
+                                    <div class="lang-switch">
+                                        <a class="lang-switch__link lang-switch__link--active" href="/">RU</a>
+                                        <a class="lang-switch__link" href="/en/">EN</a>
                                     </div>
                                 </div>
                                 <div class="nav-bottom" id="sidebar">
@@ -90,6 +72,9 @@
                                         <li class="nav-menu__item">
                                             <a class="nav-menu__link" href="#">Контакты</a>
                                         </li>
+                                        <li class="nav-menu__item nav-menu__item--mobile-center">
+                                            <a class="btn" href="#">Заказать Аудит</a>
+                                        </li>
                                     </ul>
                                 </div>   
                             </div>
@@ -97,100 +82,256 @@
                             <button class="burger" type="button" id="sidebarToggle">
                                 <span>Открыть навигацию</span>
                             </button>
+                           
+                            <div class="dots-menu">
+                                <button class="dots" type="button" id="sidebarToggleDots">
+                                    <span>Открыть навигацию</span>
+                                </button>
+                                <div class="dots-menu__dropdown">
+                                    <div class="lang-switch lang-switch--dots">
+                                        <a class="lang-switch__link lang-switch__link--active" href="/">RU</a>
+                                        <a class="lang-switch__link" href="/en/">EN</a>
+                                    </div>
+                                    <div class="contact-number contact-number--dots">
+                                        <a class="nav-menu__link" href="tel:+77272504783">+7 (727) 250 47 83</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>
         </header>
         
-        <!-- <header class="header" id="header">
-            <div class="container container-header">
-                <div class="header__inner">
-                    <div class="row header-row">
-                        <div class="col-9 col-md-5 pt-lg-3">
-                            <a href="https://krestonpr.com/">
-                                <img class="header__logo" src="/assets/images/logo.svg" alt="logo">
-                            </a>
-                        </div>
-                        <div class="col-3 col-md-7">
-                            <div class="nav-bar">
-                                <div class="nav-top">
-                                    <form class="search" action="search.html" method="get">
-                                        <div class="search-bar">
-                                            <input class="search-bar__input" type="search" placeholder="поиск">
-                                            <button class="search-bar__btn">
-                                                <span class="search-bar__icon"></span>
-                                            </button>
-                                        </div>
-                                    </form>
-                                    <div class="contact-number">
-                                        <a href="tel:+77272504783">+7 (727) 250 47 83</a>
-                                    </div>
-                                    <div class="social">
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/facebook-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/twitter-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/linkedin-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="/assets/images/social/instagram-icon.svg" alt="social">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="nav-bottom" id="sidebar">
-                                    <ul class="nav-menu">
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">О компании</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link has-subnav" href="#">Услуги</a>
-        
-                                            <ul class="subnav-menu">
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Аудит финансовой отчетности</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Аудит налоговой отчетности</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Виды аудита</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Стоимость аудиторских услуг</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Команда</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Клиенты</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </div>   
-                            </div>
-        
-                            <button class="burger" type="button" id="sidebarToggle">
-                                <span>Открыть навигацию</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header> -->
+
         <main class="main">
             <!-- <div class="container"> -->
                 
+                <div class="breadcrumbs-inner">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item active">
+                                Услуги
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
                 <div class="container">
                     <div class="tabs-ui">
-                        <div class="tabs-ui__inner">
-                            <div class="tabs-ui__item tabs-ui__item--sidebar">
+                        <div class="tabs-ui__row">
+                            <div class="tabs-ui__col tabs-ui__col--content">
+                                <div class="tabs-ui__content active">
+                                    <h2 class="tabs-ui__title">Услуги</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            <strong>Аудиторская компания ТОО «Евразийская финансовая служба»</strong> осуществляет
+                                            аудиторскую проверку предприятий в различных областях экономики: промышленных и торговых
+                                            предприятий, учебных учреждений, объектов здравоохранения, коммунальной собственности и
+                                            культуры, всех форм собственности.
+                                        </p>
+                                        <p>
+                                            В рыночных условиях организации вступают в договорные отношения по использованию своих
+                                            активов, проведению финансово-хозяйственных операций, осуществлению инвестиций.
+                                            Доверительность таких взаимосвязей должна обеспечивать всем участникам сделок получение и
+                                            использование надежной финансовой информации.
+                                        </p>
+                                        <p>
+                                            <strong>Финансовая отчетность</strong> любой организации содержит в себе информацию о ее
+                                            финансовом положении, наличии активов и обязательств, доходности, собственном капитале.
+                                        </p>
+                                        <p>
+                                            Достоверная финансовая информация дает возможность эффективно функционировать рынку
+                                            капитала. На основе финансовой отчетности даются оценки экономическим решениям и
+                                            определяются прогнозы и перспективы развития организаций.
+                                        </p>
+                                        <p>
+                                            Достоверность этой информации подтверждается независимым аудитором. Более представительной
+                                            выглядит отчетность, проверенная аудитором – это повышает доверие к финансовой отчетности.
+                                        </p>
+                                        <p class="tabs-ui__subtitle">Наши предложения для Вас:</p>
+                                        <ul class="list-mark-2">
+                                            <li>
+                                                <strong>Доступны</strong><br>
+                                                наши услуги ориентированы на конкретные предприятия, оказываются оперативно в удобном
+                                                для Вас варианте, по приемлемым ценам.
+                                            </li>
+                                            <li>
+                                                <strong>Надежны</strong><br>
+                                                мы тщательно контролируем КАЧЕСТВО оказываемых нами услуг, стараемся быть предсказуемыми
+                                                и надежными партнерами по бизнесу.
+                                            </li>
+                                            <li>
+                                                <strong>Взаимовыгодны</strong><br>
+                                                мы руководствуемся не только нашими интересами, но интересами клиентов, мы максимально
+                                                содействуем бизнесу клиентов
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Постоянно изменяющиеся внешние условия требуют адекватной реакции от организаций. Наша
+                                            компания постоянно развивается и гибко реагирует на все внешние изменения, благодаря
+                                            постоянному повышению квалификации наших сотрудников, расширению сферы деятельности,
+                                            партнерству с юридическими, оценочными компаниями и налоговыми структурами.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tabs-ui__content" id="tab_1">
+                                    <h2 class="tabs-ui__title">Аудит финансовой отчетности</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            Аудит финансовой отчетности повышает доверие к информации, которую компании готовят для
+                                            широкого круга пользователей, представляющих собой государство, общество, акционеров,
+                                            инвесторов, кредиторов, работников и других заинтересованных лиц.
+                                        </p>
+                                        <p>
+                                            Мы обеспечиваем своим клиентам разумную уверенность в том, что подготовленная ими финансовая
+                                            отчетность не содержит существенных искажений. Мы не скрываем недостатки и выражаем свою
+                                            точку зрения в соответствии с требованиями Международных стандартов аудита.
+                                        </p>
+                                        <p>
+                                            <b>Цель аудита финансовой отчетности</b> – проведение проверки для получения вывода о том,
+                                            вся ли информация, отраженная в финансовой отчетности, соответствует основам и принципам ее
+                                            составления.
+                                        </p>
+                                        <p>
+                                            У нашей команды есть опыт оказания аудиторских услуг в рамках обязательного и инициативного
+                                            аудита, субъектам крупного, среднего и малого предпринимательства.
+                                        </p>
+                                        <p>
+                                            Сотрудники нашей компании проводят аудит в соответствии с Международными стандартами аудита
+                                            и законодательством Республики Казахстан в области аудиторской деятельности.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tabs-ui__content" id="tab_2">
+                                    <h2 class="tabs-ui__title">Аудит налоговой отчетности</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            Своевременно выполненный налоговый аудит позволяет снизить риск штрафных санкций за
+                                            несоблюдение соответствующих норм налогового законодательства. Его результаты помогут
+                                            устранить вскрывшиеся недочеты, повысить качество составления отчетности. Сотрудники нашей
+                                            компании оказывают услуги не только в виде налогового консультирования, но и в форме
+                                            налогового аудита. Кроме того, наши сотрудники оказывают услуги по составлению налоговой
+                                            отчетности, консультируют по спорным вопросам, возникающим с налоговыми органами.
+                                        </p>
+                                        <p>
+                                            Консультации и налоговый аудит осуществляются в рамках требований Налогового кодекса
+                                            Республики Казахстан.
+                                        </p>
+                                        <p>
+                                            Специалисты нашей компании являются сертифицированными налоговыми консультантами.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tabs-ui__content" id="tab_3">
+                                    <h2 class="tabs-ui__title">Обязательный аудит</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            Обязательный аудит — ежегодная, обязательная, аудиторская проверка финансовой отчетности и
+                                            ведения бухгалтерского учета предприятий.
+                                        </p>
+                                        <p>
+                                            Обязательный аудит проводится в порядке и случаях, которые предусмотрены законодательными
+                                            актами Республики Казахстан.
+                                        </p>
+                                        <p>
+                                            Организации, для которых аудит является обязательным и которые в соответствии, с
+                                            законодательством Республики Казахстан публикуют в периодических печатных изданиях годовую
+                                            отчетность, обязаны публиковать вместе с годовой отчетностью и аудиторский отчет.
+                                        </p>
+                                    </div>
+                                    <h2 class="tabs-ui__title">Инициативный аудит</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>Для достижения наибольших успехов в бизнесе любой компании необходимо грамотно
+                                            контролировать все внутренние процессы, а также работу своей бухгалтерии.</p>
+                                        <p>Инициативный аудит проводится по инициативе аудируемого субъекта, либо его участника с
+                                            учетом конкретных задач, сроков и объемов аудита, предусмотренных договором на
+                                            проведение аудита между инициатором и аудиторской организацией.</p>
+                                        <p><b>Целью</b> такой проверки является контроль и анализ состояния бухгалтерского учета в
+                                            целом или отдельных его разделов, выявление состояния финансовой отчетности, разработка
+                                            рекомендаций по повышению эффективности деятельности организации и др.</p>
+                                        <p><b>Инициативный аудит</b> может быть как комплексным, так и тематическим. При
+                                            тематическом аудите контролю и анализу подвергаются только отдельные разделы и участки
+                                            учета. Разной может быть и глубина проверки: полная и сплошная проверка данных учета,
+                                            начиная с первичных документов, проведение инвентаризации активов и обязательств,
+                                            выборочная проверка данных первичного учета или только данных, содержащихся в учетных
+                                            регистрах и отчетности.</p>
+                                        <p>Если инициативный аудит носит комплексный характер, то охватывает все приведенные выше
+                                            цели.</p>
+                                        <p>Как свидетельствует практика, несвоевременное обращение к аудитору приводит к большим
+                                            финансовым затратам и требует проведения форс-мажорных мероприятий, что в итоге
+                                            оборачивается незапланированными убытками.</p>
+                                        <p>Своевременно проведенный аудит позволяет избежать этих убытков, как в настоящем, так и в
+                                            будущем.</p>
+                                    </div>
+                                    <h2 class="tabs-ui__title">Финансовый аудит по специальному заданию</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            Финансовый аудит по специальным заданиям проводится в виде проверки отдельных статей
+                                            отчетности, к примеру: состояние дебиторской и кредиторской задолженностей, наличие и
+                                            состояние материально-производственных запасов, основных средств.
+                                        </p>
+                                    </div>
+                                    <h2 class="tabs-ui__title">Периодический (повторяющийся) финансовый аудит</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>
+                                            Периодический (повторяющийся) финансовый аудит проводится на предприятии, как на
+                                            ежегодной основе, так и по результатам каждого квартала (полугодия). Это позволяет
+                                            установить длительное сотрудничество между аудитором и клиентом, дать более объективную
+                                            оценку экономического субъекта и его деятельности.
+                                        </p>
+                                        <b>Преимущества:</b>
+                                        <br><br>
+                                        <p>Во-первых, можно исправить выявленные квартальным аудитом ошибки бухгалтерского учёта уже
+                                            в следующем квартале, а значит в текущем учётном году. Особенно важно своевременное
+                                            обнаружение и исправление методических ошибок, последствия которых бывают наиболее
+                                            значительны для организации.</p>
+                                        <p>Во-вторых, ощутимо повышается качество проверки, так, как суммарное время работы с
+                                            заказчиком при квартальном аудите превышает время единовременного годового аудита и не
+                                            имеет столь напряжённого графика проверок.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs-ui__content" id="tab_4">
+                                    <h2 class="tabs-ui__title">Стоимость аудиторских услуг</h2>
+                                    <div class="tabs-ui__text">
+                                        <p>Стоимость аудиторских услуг определяется на основе следующих факторов:</p>
+                                        <ul class="list-mark-1">
+                                            <li>вид аудита и его цели — обязательный или инициативный;</li>
+                                            <li>характеристика деятельности: документооборот, количество операций в месяц, наличие
+                                                филиалов и обособленных подразделений; количество сотрудников, территориальное
+                                                расположение подразделений;</li>
+                                            <li>организационно-правовая форма предприятия;</li>
+                                            <li>состояние бухгалтерских и других документов;</li>
+                                            <li>уровень автоматизации учета;</li>
+                                            <li>наличие дополнительных задач и целей, которые должны быть достигнуты в ходе проверки.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Для ускорения процесса расчета стоимости и сроков аудиторских услуг, Вам необходимо скачать и заполнить 
+                                            <a href="/upload/D 1.1 Анкета потенц Заказчика.doc">Анкету потенциального Заказчика</a>, 
+                                            предназначенную для оценки объема необходимых аудиторских услуг и определения затрат времени на проведение 
+                                            аудита финансовой отчетности и предоставление сопутствующих услуг. 
+                                        </p>
+                                        <p>
+                                            В анкете указывается необходимая информация, или выбирается один из предложенных вариантов - 
+                                            путем отметки в соответствующей ячейке. 
+                                        </p>
+                                        <p>
+                                            Заполненная анкета передается нам путем отправки по факсу <a href="callto:+ 7 (727) 250 47 83">+ 7 (727) 250 47 83</a>  или по электронной почте <a href="mailto:audit@efs.kz">audit@efs.kz</a>.
+                                        </p>
+                                        <p>
+                                            На основании заполненной Вами анкеты наша команда подготовит 
+                                            подробное ценовое предложение, что сэкономит Ваше время при принятии решения.
+                                        </p>
+                                        <i>
+                                            Заранее благодарим за помощь. Надеемся на взаимовыгодное сотрудничество.
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-ui__col tabs-ui__col--sidebar">
                                 <ul class="tabs-ui-nav">
                                     <li class="tabs-ui-nav__item" data-tab="#tab_1">
                                         <button class="tabs-ui-nav__btn" type="button">Аудит финансовой отчетности</button>
@@ -206,48 +347,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tabs-ui__item tabs-ui__item--content">
-                                <div class="tabs-ui__content active">
-                                    <h2 class="tabs-ui__title">Услуги</h2>
-                                    <div class="tabs-ui__text">
-                                        <p>
-                                            Аудиторская компания ТОО «Евразийская финансовая служба» осуществляет аудиторскую проверку предприятий в различных областях экономики: промышленных и торговых предприятий, учебных учреждений, объектов здравоохранения, коммунальной собственности и культуры, всех форм собственности.
-                                        </p>
-                                        <p>
-                                            В рыночных условиях организации вступают в договорные отношения по использованию своих активов, проведению финансово-хозяйственных операций, осуществлению инвестиций. Доверительность таких взаимосвязей должна обеспечивать всем участникам сделок получение и использование надежной финансовой информации.
-                                        </p>
-                                        <p>
-                                            Финансовая отчетность любой организации содержит в себе информацию о ее финансовом положении, наличии активов и обязательств, доходности, собственном капитале.
-                                        </p>
-                                        <p>
-                                            Достоверная финансовая информация дает возможность эффективно функционировать рынку капитала. На основе финансовой отчетности даются оценки экономическим решениям и определяются прогнозы и перспективы развития организаций.
-                                        </p>
-                                        <p>
-                                            Достоверность этой информации подтверждается независимым аудитором. Более представительной выглядит отчетность, проверенная аудитором – это повышает доверие к финансовой отчетности.
-                                        </p>
-                                    </div>
-                                </div>   
-                                <div class="tabs-ui__content" id="tab_1">
-                                    <h2 class="tabs-ui__title">Аудит финансовой отчетности</h2>
-                                    <div class="tabs-ui__text">
-                                        <p>
-                                            Аудит финансовой отчетности повышает доверие к информации, которую компании готовят для широкого круга пользователей, представляющих собой государство, общество, акционеров, инвесторов, кредиторов, работников и других заинтересованных лиц.
-                                        </p>
-                                        <p>
-                                            Мы обеспечиваем своим клиентам разумную уверенность в том, что подготовленная ими финансовая отчетность не содержит существенных искажений. Мы не скрываем недостатки и выражаем свою точку зрения в соответствии с требованиями Международных стандартов аудита.
-                                        </p>
-                                        <p>
-                                            <strong>Цель аудита финансовой отчетности</strong> – проведение проверки для получения вывода о том, вся ли информация, отраженная в финансовой отчетности, соответствует основам и принципам ее составления.
-                                        </p>
-                                        <p>
-                                            У нашей команды есть опыт оказания аудиторских услуг в рамках обязательного и инициативного аудита, субъектам крупного, среднего и малого предпринимательства.
-                                        </p>
-                                        <p>
-                                            Сотрудники нашей компании проводят аудит в соответствии с Международными стандартами аудита и законодательством Республики Казахстан в области аудиторской деятельности. 
-                                        </p>
-                                    </div>
-                                </div>     
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,7 +356,6 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
-                    <div class="footer__title">Контакты</div>
                     <div class="footer__inner">
                         <div class="footer__item">
                             <div class="footer__subtitle">Алматы</div>
@@ -306,23 +404,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__inner">
-                        <div class="footer__logo">
-                            <a href="#">
-                                <img src="/assets/images/logo.svg" alt="logo">
-                            </a>
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="assets/images/logo.svg" alt="logo">
+                                </a>
+                            </div>
                         </div>
-                        <form class="subscribe" action="/" method="post">
-                            <div class="subscribe__group">
-                                <label class="subscribe__label" for="email">Ваш E-mail</label>
-                                <input class="subscribe__input" id="email" type="email" placeholder="Tom@gmail.com" required>
-                            </div>
-                            <div class="subscribe__group">
-                                <label class="subscribe__label" for="name">Ваше имя</label>
-                                <input class="subscribe__input" id="name"type="text" placeholder="Tom" required>
-                            </div>
-                            <button class="subscribe__btn" type="submit">Отправить</button>
-                        </form>
+                        <div class="footer__col">
+                            <form class="subscribe" action="/" method="post">
+                                <div class="subscribe__inner">
+                                    <div class="subscribe__item">
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="email">Ваш E-mail</label>
+                                            <input class="subscribe__input form__control" id="email" type="email" placeholder="Tom@gmail.com" required>
+                                        </div>
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="name">Ваше имя</label>
+                                            <input class="subscribe__input form__control" id="name"type="text" placeholder="Tom" required>
+                                        </div>
+                                    </div>
+                                    <div class="subscribe__item">
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="text">Задать вопрос?</label>
+                                            <textarea class="subscribe__textarea form__control" id="text" placeholder="Ваше сообщение"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribe__group form__group">
+                                    <button class="subscribe__btn" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="copyright">&copy; Kreston Kazakhstan, 2022</div>
                 </div>
@@ -330,8 +444,8 @@
         </footer>    </div>
 
     <!-- JS -->
-    <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/vendor/masonry.pkgd.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/vendor/masonry.pkgd.min.js"></script>
 </body>
 
 </html>

@@ -32,30 +32,12 @@
                         <div class="header__right">
                             <div class="nav-bar">
                                 <div class="nav-top">
-                                    <form class="search" action="search.html" method="get">
-                                        <div class="search-bar">
-                                            <input class="search-bar__input" type="search" placeholder="поиск">
-                                            <button class="search-bar__btn">
-                                                <span class="search-bar__icon"></span>
-                                            </button>
-                                        </div>
-                                    </form>
                                     <div class="contact-number">
                                         <a href="tel:+77272504783">+7 (727) 250 47 83</a>
                                     </div>
-                                    <div class="social">
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/facebook-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/twitter-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/linkedin-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/instagram-icon.svg" alt="social">
-                                        </a>
+                                    <div class="lang-switch">
+                                        <a class="lang-switch__link lang-switch__link--active" href="/">RU</a>
+                                        <a class="lang-switch__link" href="/en/">EN</a>
                                     </div>
                                 </div>
                                 <div class="nav-bottom" id="sidebar">
@@ -90,6 +72,9 @@
                                         <li class="nav-menu__item">
                                             <a class="nav-menu__link" href="#">Контакты</a>
                                         </li>
+                                        <li class="nav-menu__item nav-menu__item--mobile-center">
+                                            <a class="btn" href="#">Заказать Аудит</a>
+                                        </li>
                                     </ul>
                                 </div>   
                             </div>
@@ -97,95 +82,42 @@
                             <button class="burger" type="button" id="sidebarToggle">
                                 <span>Открыть навигацию</span>
                             </button>
+                           
+                            <div class="dots-menu">
+                                <button class="dots" type="button" id="sidebarToggleDots">
+                                    <span>Открыть навигацию</span>
+                                </button>
+                                <div class="dots-menu__dropdown">
+                                    <div class="lang-switch lang-switch--dots">
+                                        <a class="lang-switch__link lang-switch__link--active" href="/">RU</a>
+                                        <a class="lang-switch__link" href="/en/">EN</a>
+                                    </div>
+                                    <div class="contact-number contact-number--dots">
+                                        <a class="nav-menu__link" href="tel:+77272504783">+7 (727) 250 47 83</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                 </div>
             </div>
         </header>
         
-        <!-- <header class="header" id="header">
-            <div class="container container-header">
-                <div class="header__inner">
-                    <div class="row header-row">
-                        <div class="col-9 col-md-5 pt-lg-3">
-                            <a href="https://krestonpr.com/">
-                                <img class="header__logo" src="assets/images/logo.svg" alt="logo">
-                            </a>
-                        </div>
-                        <div class="col-3 col-md-7">
-                            <div class="nav-bar">
-                                <div class="nav-top">
-                                    <form class="search" action="search.html" method="get">
-                                        <div class="search-bar">
-                                            <input class="search-bar__input" type="search" placeholder="поиск">
-                                            <button class="search-bar__btn">
-                                                <span class="search-bar__icon"></span>
-                                            </button>
-                                        </div>
-                                    </form>
-                                    <div class="contact-number">
-                                        <a href="tel:+77272504783">+7 (727) 250 47 83</a>
-                                    </div>
-                                    <div class="social">
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/facebook-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/twitter-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/linkedin-icon.svg" alt="social">
-                                        </a>
-                                        <a class="social__item" href="#">
-                                            <img src="assets/images/social/instagram-icon.svg" alt="social">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="nav-bottom" id="sidebar">
-                                    <ul class="nav-menu">
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">О компании</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link has-subnav" href="#">Услуги</a>
-        
-                                            <ul class="subnav-menu">
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Аудит финансовой отчетности</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Аудит налоговой отчетности</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Виды аудита</a>
-                                                </li>
-                                                <li>
-                                                    <a class="subnav-menu__link" href="#">Стоимость аудиторских услуг</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Команда</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Клиенты</a>
-                                        </li>
-                                        <li class="nav-menu__item">
-                                            <a class="nav-menu__link" href="#">Контакты</a>
-                                        </li>
-                                    </ul>
-                                </div>   
-                            </div>
-        
-                            <button class="burger" type="button" id="sidebarToggle">
-                                <span>Открыть навигацию</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header> -->
+
         <main class="main">
             <!-- <div class="container"> -->
+                
+                <div class="breadcrumbs-inner">
+                    <div class="container">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item active">
+                                Наша команда
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 
                 <div class="container">
                     <div class="team">
@@ -195,7 +127,7 @@
                                 <div class="team__subtitle">
                                     Директор аудиторской компании ТОО "Евразийская Финансовая служба"
                                 </div>
-                                <ul class="team__list">
+                                <ul class="list-mark-1">
                                     <li>Квалификационное свидетельство аудитора.</li>
                                     <li>Сертификат IFA.</li>
                                     <li>Сертификат CIPA. </li>
@@ -251,7 +183,7 @@
                                 <div class="team__subtitle">
                 				    Аудитор ТОО «Евразийская Финансовая служба»
                                 </div>
-                                <ul class="team__list">
+                                <ul class="list-mark-1">
                                     <li>Квалификационное свидетельство аудитора.</li>
                                     <li>Сертификат IFA.</li>
                                     <li>Сертификат CIPA.</li>
@@ -289,7 +221,7 @@
                                 <div class="team__subtitle">
                                     Аудитор ТОО «Евразийская Финансовая служба»
                                 </div>
-                                <ul class="team__list">
+                                <ul class="list-mark-1">
                                     <li>Квалификационное свидетельство аудитора.</li>
                                     <li>Сертификат профессионального бухгалтера.</li>
                                     <li>Диплом АССА по МСО (DipIFR)</li>
@@ -321,7 +253,7 @@
                                 <div class="team__subtitle">
                 				    Аудитор ТОО «Евразийская Финансовая служба»
                                 </div>
-                                <ul class="team__list">
+                                <ul class="list-mark-1">
                                     <li>Квалификационное свидетельство аудитора.</li>
                 				    <li>Диплом АССА по МСО (DipIFR)</li>
                                 </ul>
@@ -347,7 +279,7 @@
                                 <div class="team__subtitle">
                 				    Аудитор ТОО «Евразийская Финансовая служба»
                                 </div>
-                                <ul class="team__list">
+                                <ul class="list-mark-1">
                 				    <li>Квалификационное свидетельство аудитора.</li>
                                 </ul>
                             </div>
@@ -369,7 +301,6 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
-                    <div class="footer__title">Контакты</div>
                     <div class="footer__inner">
                         <div class="footer__item">
                             <div class="footer__subtitle">Алматы</div>
@@ -418,23 +349,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer__inner">
-                        <div class="footer__logo">
-                            <a href="#">
-                                <img src="assets/images/logo.svg" alt="logo">
-                            </a>
+                    <div class="footer__row">
+                        <div class="footer__col">
+                            <div class="footer__logo">
+                                <a href="#">
+                                    <img src="assets/images/logo.svg" alt="logo">
+                                </a>
+                            </div>
                         </div>
-                        <form class="subscribe" action="/" method="post">
-                            <div class="subscribe__group">
-                                <label class="subscribe__label" for="email">Ваш E-mail</label>
-                                <input class="subscribe__input" id="email" type="email" placeholder="Tom@gmail.com" required>
-                            </div>
-                            <div class="subscribe__group">
-                                <label class="subscribe__label" for="name">Ваше имя</label>
-                                <input class="subscribe__input" id="name"type="text" placeholder="Tom" required>
-                            </div>
-                            <button class="subscribe__btn" type="submit">Отправить</button>
-                        </form>
+                        <div class="footer__col">
+                            <form class="subscribe" action="/" method="post">
+                                <div class="subscribe__inner">
+                                    <div class="subscribe__item">
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="email">Ваш E-mail</label>
+                                            <input class="subscribe__input form__control" id="email" type="email" placeholder="Tom@gmail.com" required>
+                                        </div>
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="name">Ваше имя</label>
+                                            <input class="subscribe__input form__control" id="name"type="text" placeholder="Tom" required>
+                                        </div>
+                                    </div>
+                                    <div class="subscribe__item">
+                                        <div class="subscribe__group form__group">
+                                            <label class="subscribe__label" for="text">Задать вопрос?</label>
+                                            <textarea class="subscribe__textarea form__control" id="text" placeholder="Ваше сообщение"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subscribe__group form__group">
+                                    <button class="subscribe__btn" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="copyright">&copy; Kreston Kazakhstan, 2022</div>
                 </div>
